@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fancy Animated Website</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional website design services tailored to your brand. Boost your online presence with fast, creative, and responsive websites.">
+  <meta name="keywords" content="web design, responsive website, portfolio, SEO, content creation, web development, Kevin, MySite">
+  <meta name="author" content="Kevin">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="MySite - Custom Web Design Services">
+  <meta property="og:description" content="Creative and professional websites tailored to your needs. Contact now to grow your business online.">
+  <meta property="og:image" content="https://kevcodecraft.github.io/my-website/images/og-image.jpg">
+  <meta property="og:url" content="https://kevcodecraft.github.io/my-website/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MySite - Custom Web Design Services">
+  <meta name="twitter:description" content="Creative and professional websites tailored to your needs.">
+  <meta name="twitter:image" content="https://kevcodecraft.github.io/my-website/images/og-image.jpg">
+
+  <!-- Styles and Fonts -->
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 55%;
+      object-fit: cover;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+    .slide {
+      display: block;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .services-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .service-card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #333;
+      color: rgb(173, 217, 222);
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <header class="header">
+    <div class="container">
+      <img src="flag.png" alt="Logo" class="logo" />
+  
+      <button class="hamburger">&#9776;</button> <!-- hamburger menu icon -->
+  
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Read more</a>
+        <a href="#signup">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+  
+<!-- Hero / Image Slider -->
+<section id="home" class="hero">
+  <div class="slider">
+    <div class="slide">
+      <img src="drums2.jpg" alt="Slide 1">
+      <div class="slide-text">VISIT BURUNDI</div>
+    </div>
+    <div class="slide">
+      <img src="tanganyika.jpg" alt="Slide 2">
+      <div class="slide-text">Beautiful mountains</div>
+    </div>
+    <div class="slide">
+      <img src="coffee2.jpg" alt="Slide 2">
+      <div class="slide-text">☕ Burundi Coffee – 
+        The Taste of Untouched Nature</div>
+    </div>
+    <div class="slide">
+      <img src="nature.jpg" alt="Slide 3">
+      <div class="slide-text">National Parks</div>
+    </div>
+    <div class="slide">
+      <img src="flag.jpg" alt="Slide 4">
+      <div class="slide-text">Burundi Flag</div>
+    </div>
+    <div class="slide">
+      <img src="chute.jpg" alt="Slide 5">
+      <div class="slide-text">Enjoy the Nature of BURUNDI</div>
+    </div>
+  </div>
+
+  <section class="video-section">
+    <div class="container">
+      <h2>Explore Burundi in Motion</h2>
+      <video width="100%" height="auto" controls>
+        <source src="videos/burundi-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  
+</section>
+
+<!-- Burundi Location Section -->
+<section class="section" id="burundi-location" style="background-color: #e6f2ff; padding: 40px 0;">
+  <div class="container" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+    
+    <!-- Map Embed -->
+    <div style="flex: 1 1 300px; min-width: 300px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15919553.649902629!2d22.75207987711549!3d-3.3776318673680236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x174c1f775eaad9fb%3A0xd88b0fef9b10dfd!2sBurundi!5e0!3m2!1sen!2sbi!4v1652687123456!5m2!1sen!2sbi"
+        width="100%"
+        height="300"
+        style="border:0; border-radius: 12px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Description -->
+    <div style="flex: 1 1 300px; min-width: 300px;">
+      <h2 style="color: #005f99; font-size: 28px;">Discover Burundi</h2>
+      <p style="font-size: 18px; line-height: 1.6;">
+        Nestled in the heart of East Africa, Burundi is a hidden gem brimming with natural beauty,
+        warm hospitality, and rich cultural heritage. From the crystal-clear waters of Lake Tanganyika
+        to the soaring heights of Mount Heha, this country offers a one-of-a-kind adventure for every explorer.
+      <p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Image + Description Section 1 -->
+<section class="image-text-section">
+  <div class="image-text-container">
+    <img src="RutovuNilriver.jpg" alt="Web Showcase" class="feature-img">
+    <div class="text-box">
+      <h3>Rutovu Nil River: The Soul of Burundi</h3>
+      <p>From the legendary source of the Nile in Rutovu to ancient monuments and vibrant national parks, every part of Burundi whispers a tale of resilience, history, and breathtaking beauty.
+        Immerse yourself in landscapes where rolling hills meet rich wildlife, and experience the genuine warmth of its people. For travelers seeking a raw, authentic adventure off the beaten path, Burundi is a treasure waiting to be explored.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Image + Description Section 2 (Reversed Layout) -->
+<section class="image-text-section">
+  <div class="image-text-container reverse">
+    <div class="text-box">
+      <h3>Discover the Wonders of Lake Tanganyika</h3>
+      <p>Journey to the breathtaking shores of Lake Tanganyika—the world’s longest freshwater lake and one of Africa’s hidden gems. Marvel at its crystal-clear waters teeming with over 350 unique fish species, many found nowhere else on Earth. Stroll along scenic beaches, soak in the natural beauty, and keep an eye out for majestic hippos lounging near the water’s edge.</p>
+    </div>
+    <img src="tanganyika.jpg" alt="Results Screenshot" class="feature-img">
+  </div>
+</section>
+
+<!-- Image + Description Section 3 (Reversed Layout) -->
+<section class="image-text-section">
+  <div class="image-text-container reverse">
+    <div class="text-box">
+      <h3>Step into History Just South of Bujumbura!</h3>
+      <p>Only 10 kilometers from Bujumbura, discover the legendary meeting point of David Livingstone and Henry Morton Stanley — two of the most iconic explorers of Africa!
+        This historic monument honors their incredible journeys and marks a pivotal moment in the exploration of the continent. A must-visit site for anyone fascinated by adventure, discovery, and Africa’s rich past.</p>
+    </div>
+    <img src="Livingstone.jpg" alt="Results Screenshot" class="feature-img">
+  </div>
+</section>
+<!-- Image + Description Section 4 (Reversed Layout) -->
+<section class="image-text-section">
+  <div class="image-text-container reverse">
+    <div class="text-box">
+      <h3>Conquer the Peak of Burundi!</h3>
+      <p>Embark on an unforgettable adventure to the summit of Mount Heha — the highest point in Burundi!
+        Experience breathtaking panoramic views of Lake Tanganyika and the rolling hills beyond. Whether you're a seasoned hiker or simply crave a scenic escape, Mount Heha offers the perfect thrill for every nature lover and adventurer.</p>
+    </div>
+    <img src="heha.jpg" alt="Results Screenshot" class="feature-img">
+  </div>
+</section>
+
+<!-- Image + Description Section 5 (Reversed Layout) -->
+<section class="image-text-section">
+  <div class="image-text-container reverse">
+    <div class="text-box">
+      <h3>Feel the Warmth of Burundian Hospitality!</h3>
+      <p>Step into Burundi and be embraced like family! Renowned for their genuine warmth, the Burundian people go above and beyond to make visitors feel at home—often speaking your language and treating every guest with heartfelt respect. It’s not just a welcome—it’s a way of life.</p>
+    </div>
+    <img src="welcoming.jpg" alt="Results Screenshot" class="feature-img">
+  </div>
+</section>
+
+<!-- Image + Description Section 6 (Reversed Layout) -->
+<section class="image-text-section">
+  <div class="image-text-container reverse">
+    <div class="text-box">
+      <h3>☕ Burundi Coffee – The Taste of Untouched Nature</h3>
+      <p>Grown in the heart of Africa’s highlands, Burundi coffee is one of the world’s best-kept secrets. Cultivated in rich volcanic soils, at altitudes of 1,400 to 2,000 meters above sea level, it is renowned for its natural purity, smooth body, and vibrant flavor.  
+        Burundian coffee is truly original and organic by nature — most small-scale farmers grow their beans without synthetic fertilizers or chemicals, relying on traditional methods passed down through generations. Each coffee cherry is handpicked, sun-dried, and carefully processed, ensuring exceptional quality from bean to cup.
+
+      </p>
+    </div>
+    <img src="coffee.jpg" alt="Results Screenshot" class="feature-img">
+  </div>
+</section>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Burundi is a country rich in natural beauty, featuring diverse landscapes from lakes and waterfalls to national parks and lush forests. 
+        Lake Tanganyika, the second deepest lake in the world, is a major highlight, offering water sports and stunning views.
+         Kibira National Park, with its dense rainforests, and Rusizi National Park, 
+        known for hippos and rare birds, are also popular destinations.</p>
+    </div>
+  </section>
+
+  
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🌍 Discover Burundi with Us</h3>
+          <p>Our mission is to help you explore Burundi from one breathtaking corner to the next! 
+            Whether it’s hiking majestic mountains, relaxing on the shores of Lake Tanganyika, discovering hidden waterfalls, or diving into the country’s rich history and vibrant culture — 
+            we’ve got your journey covered.
+            With us, it’s more than just travel — it’s an unforgettable adventure through the heart of Africa. Let us guide you through Burundi’s natural wonders, cultural gems, and warm hospitality every step of the way. Adventure, beauty, and discovery await — are you ready?</p>
+        </div>
+        <div class="service-card">
+          <h3>🛡️ Travel with Confidence</h3>
+          <p>When you travel with us, your safety and comfort are our top priorities. We ensure a smooth and secure experience as you explore the beauty of Burundi — from vibrant cities to peaceful countryside.
+
+            ✅ We assist with hotel bookings, choosing only trusted and comfortable accommodations.
+            ✅ We take your security seriously, guiding you through safe travel routes and trusted local partners.</p>
+        </div>
+        <div class="service-card">
+          <h3>Content Creation</h3>
+          <p>We create engaging content that resonates with your audience and drives results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Sign Up Section -->
+<section id="signup" class="section">
+  <div class="container">
+    <h2>Sign Up to Visit Burundi</h2>
+    <p>Planning your trip to Burundi? Let us help! Sign up to receive personalized travel guidance, hotel booking support, and tour planning options.</p>
+
+    <form id="contactForm" action="https://formspree.io/f/xqaqnnwn" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="nationality" placeholder="Nationality" required />
+      <input type="date" name="arrival_date" placeholder="Planned Arrival Date" required />
+      <textarea name="preferences" placeholder="Any specific interests or travel needs? (e.g. nature, history, relaxation)" rows="4"></textarea>
+      <button type="submit">Submit Sign-Up</button>
+    </form>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const data = new FormData(form);
+        const json = JSON.stringify(Object.fromEntries(data.entries()));
+
+        fetch(form.action, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: json
+        })
+        .then(response => {
+          if (response.ok) {
+            alert("✅ Thank you for signing up! We'll send you daily updates.");
+            form.reset();
+          } else {
+            alert("❌ Submission failed. Please try again later.");
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert("⚠️ Something went wrong.");
+        });
+      });
+    </script>
+  </div>
+</section>
+ 
+    
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent the default form submit
+    
+      const form = e.target;
+      const data = new FormData(form);
+      const plainData = Object.fromEntries(data.entries());
+    
+      // First send data to Formspree
+      fetch('https://formspree.io/f/xqaqnnwn', {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Thank you for contacting us, we will come back to you soon': 'application/json'
+        }
+      }).then(response => {
+        // Then send the same data to Make Webhook
+        return fetch('https://formspree.io/f/xqaqnnwn')
+', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(plainData)
+        });
+      }).then(() => {
+        alert('Thank you! Your message has been sent.');
+        form.reset();
+      }).catch(error => {
+        console.error('Error:', error);
+        alert('Oops! Something went wrong.');
+      });
+    });
+    </script>
+    
+      
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/xqaqnnwn
+
+" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <a href="https://wa.me/25769717183" class="call-button" target="_blank">📱 Message Us on WhatsApp</a>
+
+    </div>
+  </section>
+  
+  <div class="social-links">
+    <a href="https://www.facebook.com/uwimana.dikevin/" target="_blank" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+        <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/kevin_uwimana_257?igsh=MWFnbW14NXBsaXF0NQ%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+      </svg>
+    </a>
+  </div>
+  <section class="section" id="blogs">
+    <div class="container">
+      <h2>Explore More About Burundi</h2>
+      <p>Dive into stories, insights, and tips from the heart of Burundi.</p>
+  
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+          <img src="museum2.jpg" alt="Lake Tanganyika">
+          <h3>Top 5 Places to Visit in Burundi</h3>
+          <h4>Ruvubu National Park</h4>
+          <h4>Rusizi National park</h4>
+          <h4>Kibira National Park</h4>
+          
+
+          <h3>National Museum of Gitega</h3>
+          <p>
+           
+            Located in Gitega (formerly Kitega), Burundi, the National Museum of Gitega hosts some of the best archival information about the history of Burundi. Founded in 1955, the museum is well-known for holding a wide range of artefacts from Kingdom drums, house items, traditional arts, dance and music instruments. Other collections include ancient Burundian clothes, jewels, kitchen material, welding fans, weapons, baskets and calabashes. The drum sanctuary also contains ancient drum making tools where drum makers and dancers demonstrate how to construct the drums, learn the songs and perform drum exhibitions for visitors.
+            </p>
+          
+          <a href="#">Read More →</a>
+        </div>
+  
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+          <img src="food2.jpg" alt="Burundi Food">
+          <h3>A Taste of Burundi: Local Cuisine</h3>
+          <p>Savor the Flavors of Burundi
+            Embark on a mouthwatering journey through Burundi’s traditional cuisine — from smoky barbecue and hearty beans to sweet potatoes, fluffy Ugali (cassava bread), and the famous Mukeke fish from Lake Tanganyika. Don’t miss out on aromatic rice dishes and a rainbow of fresh, tropical fruits bursting with flavor. Discover where locals go to eat and enjoy these authentic tastes!
+          </p>
+          <a href="#">Read More →</a>
+        </div>
+  
+        <!-- Blog Post 3 -->
+        <div class="blog-card">
+          <img src="history.jpg" alt="Culture of Burundi">
+          <h3>History & Culture of Burundi</h3>
+          <p>Burundi has a rich history that dates back more than 500 years. The country was initially ruled by a series of monarchs, and the Kingdom of Burundi was established in the 17th century. The royal court was known for its elaborate ceremonies and rituals, and the monarchs were considered to be sacred figures with divine authority.
+
+            In the late 19th century, European colonizers arrived in Burundi and established control over the region. Burundi became a part of German East Africa in 1899 and was later placed under Belgian rule after World War I. During this period, Burundi’s economy was largely based on agriculture, with coffee and cotton as major cash crops.
+            
+            Burundi gained independence from Belgium in 1962, and the country experienced political instability in the following years. A series of coups and ethnic tensions led to a civil war that lasted from 1993 to 2005, resulting in the deaths of an estimated 300,000 people. The country has made significant strides towards peace and stability since then, and held democratic elections in 2020.
+            
+            Burundi is known for its vibrant cultural heritage, which is influenced by its history and ethnic diversity. The country is home to three main ethnic groups: the Hutu, Tutsi, and Twa. Each group has its own unique traditions and customs, including music, dance, and art.
+            
+            One of the most iconic aspects of Burundian culture is its drumming and dancing. The country is known for its traditional drumming troupes, which use a variety of drums and other percussion instruments to create intricate rhythms. Burundian dance is also characterized by its energetic and acrobatic movements, often accompanied by the sounds of the drums.
+            
+            In addition to its music and dance, Burundi is also known for its handicrafts. The country’s artisans are skilled at weaving, pottery, basketry, and other crafts, which are sold in local markets and shops.
+            
+            In summary, Burundi has a rich history and cultural heritage that is influenced by its ethnic diversity and colonial past. The country’s traditional music, dance, and handicrafts are an important part of its cultural identity and reflect the creativity and ingenuity of its people. Despite the challenges it has faced in recent years, Burundi remains a unique and fascinating destination for travelers interested in exploring its rich cultural heritage.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 designed by Kevin. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

